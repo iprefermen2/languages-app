@@ -14,9 +14,9 @@
             ]
         },
         {
-            "id":"0",
-            "original-text":"o",
-            "translated-text":"sobre",
+            "id":"1",
+            "original-text":"jeden",
+            "translated-text":"uno",
             "date":"12.9.2023",
             "algorithm": [
                 {
@@ -27,9 +27,35 @@
             ]
         },
         {
-            "id":"0",
-            "original-text":"o",
-            "translated-text":"sobre",
+            "id":"2",
+            "original-text":"rodina",
+            "translated-text":"la familia",
+            "date":"12.9.2023",
+            "algorithm": [
+                {
+                    "grade": "0",
+                    "recalls": "0",
+                    "easiness-factor": "0"
+                }
+            ]
+        },
+        {
+            "id":"3",
+            "original-text":"kostol",
+            "translated-text":"la iglesia",
+            "date":"12.9.2023",
+            "algorithm": [
+                {
+                    "grade": "0",
+                    "recalls": "0",
+                    "easiness-factor": "0"
+                }
+            ]
+        },
+        {
+            "id":"4",
+            "original-text":"rodina",
+            "translated-text":"parientes",
             "date":"12.9.2023",
             "algorithm": [
                 {
