@@ -1,0 +1,43 @@
+{
+    "items":[
+        {
+            "id":"0",
+            "original-text":"o",
+            "translated-text":"sobre",
+            "date":"12.9.2023",
+            "algorithm": [
+                {
+                    "grade": "0",
+                    "recalls": "0",
+                    "easiness-factor": "0"
+                }
+            ]
+        },
+        {
+            "id":"0",
+            "original-text":"o",
+            "translated-text":"sobre",
+            "date":"12.9.2023",
+            "algorithm": [
+                {
+                    "grade": "0",
+                    "recalls": "0",
+                    "easiness-factor": "0"
+                }
+            ]
+        },
+        {
+            "id":"0",
+            "original-text":"o",
+            "translated-text":"sobre",
+            "date":"12.9.2023",
+            "algorithm": [
+                {
+                    "grade": "0",
+                    "recalls": "0",
+                    "easiness-factor": "0"
+                }
+            ]
+        }
+    ]
+}
