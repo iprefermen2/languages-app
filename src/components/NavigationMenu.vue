@@ -10,7 +10,8 @@
     </nav>
 </template>
 
-<script></script>
+<script>
+</script>
 
 
 <style>

@@ -3,7 +3,7 @@
 <template>
     <div class="dude">
       <article class="">
-       <strong>{{name}}</strong>
+       <strong>{{displayword}}</strong>
        <span>Last exercised on: 25.9.2004<br>
               138 days before.</span>
       </article>
@@ -16,7 +16,12 @@ export default{
     name: "WordCard",
     props: {
       name: String,
-    }
+    },
+    data(){
+      return{
+        displayword: this.name,
+      }
+    },
 };
 </script>
 
