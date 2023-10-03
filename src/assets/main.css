@@ -86,11 +86,7 @@ ul {
   top: 12px;
 }
 
-.dude:nth-child(5n+1) article { background: #3b9ae1; }
-.dude:nth-child(5n+4) article { background: #f6be00; }
-.dude:nth-child(5n+3) article { background: #e64134; }
-.dude:nth-child(5n+2) article { background: #eb70b1; }
-.dude:nth-child(5n+5) article { background: #0f1a5f; }
+.dude article { background: #3b9ae1; }
 
 .main-nav {
     background-color: #0f1a5f; /* Slightly darker than body's background for distinction */

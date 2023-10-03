@@ -1,6 +1,6 @@
 <template>
     <NavigationMenu></NavigationMenu>
-    <WordCard name="long name for some"></WordCard>
+    <WordCard></WordCard>
     <RatingMenu></RatingMenu>
 </template>
 

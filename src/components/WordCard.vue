@@ -1,30 +1,37 @@
-
-
 <template>
-    <div class="dude">
-      <article class="">
-       <strong>{{displayword}}</strong>
-       <span>Last exercised on: 25.9.2004<br>
-              138 days before.</span>
-      </article>
-      <a href="#" class="ctrl">x</a>
-    </div>
+    <div @click="toggleCard">
+    <transition name="flip">
+        <component  :is="cardSide" />
+    </transition>
+  </div>
 </template>
 
 <script lang="ts">
+import CardFront from './CardFront.vue';
+import CardBack from "./CardBack.vue";
+
 export default{
     name: "WordCard",
-    props: {
-      name: String,
-    },
     data(){
       return{
-        displayword: this.name,
+        flipped: false,
       }
     },
+    computed: {
+      cardSide(){
+        if(this.flipped) return CardFront;
+        else return CardBack;
+      }
+    },
+    methods: {
+      toggleCard(){
+        this.flipped = !this.flipped;
+      }
+    },
+
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 
 </style>
