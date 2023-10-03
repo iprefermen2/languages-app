@@ -1,13 +1,15 @@
 <template>
     <NavigationMenu></NavigationMenu>
-    <WordCard name="juntos"></WordCard>
+    <WordCard name="long name for some"></WordCard>
     <RatingMenu></RatingMenu>
 </template>
 
-<script lang="ts">
+<script>
 import WordCard from './components/WordCard.vue'
 import NavigationMenu from './components/NavigationMenu.vue'
 import RatingMenu from './components/RatingMenu.vue'
+
+import wordsData from './assets/wordsData.json'
 
 
 export default{
@@ -16,6 +18,11 @@ export default{
     WordCard, 
     NavigationMenu,
     RatingMenu,
+  },
+  data() {
+      return{
+        words: wordsData,
+      }
   },
 }
 </script>

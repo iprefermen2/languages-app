@@ -1,9 +1,9 @@
-{
-    "items":[
+[
+    
         {
             "id":"0",
             "original-text":"o",
-            "translated-text":"sobre",
+            "translatedText":"sobre",
             "date":"12.9.2023",
             "algorithm": [
                 {
@@ -16,7 +16,7 @@
         {
             "id":"1",
             "original-text":"jeden",
-            "translated-text":"uno",
+            "translatedText":"uno",
             "date":"12.9.2023",
             "algorithm": [
                 {
@@ -29,7 +29,7 @@
         {
             "id":"2",
             "original-text":"rodina",
-            "translated-text":"la familia",
+            "translatedText":"la familia",
             "date":"12.9.2023",
             "algorithm": [
                 {
@@ -42,7 +42,7 @@
         {
             "id":"3",
             "original-text":"kostol",
-            "translated-text":"la iglesia",
+            "translatedText":"la iglesia",
             "date":"12.9.2023",
             "algorithm": [
                 {
@@ -55,7 +55,7 @@
         {
             "id":"4",
             "original-text":"rodina",
-            "translated-text":"parientes",
+            "translatedText":"parientes",
             "date":"12.9.2023",
             "algorithm": [
                 {
@@ -65,5 +65,5 @@
                 }
             ]
         }
-    ]
-}
+    
+]

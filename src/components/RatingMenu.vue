@@ -1,11 +1,9 @@
 <template>
-    <BanIcon></BanIcon>
-    <StarIcon></StarIcon>
-    <StarIcon></StarIcon>
-    <StarIcon></StarIcon>
-    <StarIcon></StarIcon>
-    <StarIcon></StarIcon>
-    <RatingExplanation></RatingExplanation>
+    <div>
+        <BanIcon></BanIcon>
+        <StarIcon v-for="n in 5" :key="n"></StarIcon>
+        <RatingExplanation></RatingExplanation>
+    </div>
 </template>
 
 <script lang="ts">
@@ -28,5 +26,8 @@ export default{
 
 
 <style lang="scss" scoped>
+div{
+    margin-top: 50px;
+}
 
 </style>
