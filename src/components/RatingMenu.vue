@@ -1,7 +1,11 @@
 <template>
     <div>
-        <BanIcon></BanIcon>
-        <StarIcon v-for="n in 5" :key="n"></StarIcon>
+        <BanIcon
+        @new-rating="rateWord($event)"
+        ></BanIcon>
+        <StarIcon v-for="n in 5" :key="n"
+        @new-rating="rateWord($event)"
+        ></StarIcon>
         <RatingExplanation></RatingExplanation>
     </div>
 </template>
@@ -18,6 +22,11 @@ export default{
       BanIcon,
       RatingExplanation,
      },
+     methods:{
+        rateWord(e:number){
+            this.$emit('new-rating',e)
+        }
+     }
 };
 </script>
 

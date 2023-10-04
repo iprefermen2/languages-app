@@ -5,11 +5,12 @@
             "originalText":"o",
             "translatedText":"sobre",
             "date":"1696419375294",
+            "oldDate":"1695912553111",
             "algorithm": 
                 {
                     "grade": "0",
                     "recalls": "0",
-                    "easiness-factor": "0"
+                    "easinessFactor": "1.3"
                 }
             
         },
@@ -18,11 +19,12 @@
             "originalText":"jeden",
             "translatedText":"uno",
             "date":"1696332996485",
+            "oldDate":"1696150175294",
             "algorithm": 
                 {
                     "grade": "0",
                     "recalls": "0",
-                    "easiness-factor": "0"
+                    "easinessFactor": "1.3"
                 }
             
         },
@@ -31,11 +33,12 @@
             "originalText":"rodina",
             "translatedText":"la familia",
             "date":"1696505807209",
+            "oldDate":"1696150175294",
             "algorithm": 
                 {
                     "grade": "0",
                     "recalls": "0",
-                    "easiness-factor": "0"
+                    "easinessFactor": "1.3"
                 }
             
         }   
