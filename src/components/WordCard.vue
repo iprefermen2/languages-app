@@ -1,20 +1,36 @@
 <template>
     <div @click="toggleCard">
     <transition name="flip">
-        <component :frontText="wordData.algorithm.grade" :backText="wordData.translatedText" :is="cardSide" />
+        <component 
+        :frontText="wordData.originalText" 
+        :backText="wordData.translatedText" 
+        :oldDate="wordData.oldDate"
+
+        :is="cardSide"
+        
+        
+        />
     </transition>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import CardFront from './CardFront.vue';
 import CardBack from "./CardBack.vue";
 
 export default{
     name: "WordCard",
-    props:[
-      "wordData"
-    ],
+    props: {
+    wordData: {
+      default: [{       
+            id:"0",
+            originalText:"It's over for today",
+            translatedText:"It's over for today",
+            oldDate: Date.now(),
+        }
+      ]
+    }
+    },
     data(){
       return{
         flipped: false,

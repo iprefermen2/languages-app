@@ -2,18 +2,34 @@
     <div class="dude">
       <article>
        <strong>{{frontText}}</strong>
-       <span>Last exercised on: 25.9.2004<br>
-              138 days before.</span>
+       <span>Last exercised on: {{lastExercised()}}<br>
+              {{daysBefore()}} days before.</span>
       </article>
       <a href="#" class="ctrl">x</a>
     </div>   
 </template>
 
-<script lang="ts">
+<script >
 export default{
     name: 'CardFront',
-    props:['frontText']
-
+    props: {
+    frontText: {
+      type: String,
+      default: "It's over for today"
+    },
+    oldDate:{
+      default: Date.now()
+    }
+  },
+  methods:{
+    lastExercised(){
+      let procesedDate = new Date(parseInt(this.oldDate))
+      return procesedDate.getDate() + "." + (procesedDate.getMonth()+1) + "." + procesedDate.getFullYear()
+    },
+    daysBefore(){
+      return Math.ceil((Date.now() - parseInt(this.oldDate))/86400000)
+    }
+  },
 }
 </script>
 

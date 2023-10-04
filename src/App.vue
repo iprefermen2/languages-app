@@ -43,6 +43,7 @@ export default{
       console.log(this.getCurrentWord().date);
       console.log(this.getCurrentWord().oldDate);
       console.log(this.getCurrentWord());
+      this.sortedWords.shift();
       console.log(this.sortedWords);
     },
     algoSM2(q){
@@ -62,7 +63,6 @@ export default{
           this.getCurrentWord().date = Date.now() + (6*86400000);
         }
         else{
-          console.log("CHAPO")
           this.getCurrentWord().date = (Math.round((Date.now() - this.getCurrentWord().oldDate)/86400000) *  EF) * 86400000;
         }
 
