@@ -1,7 +1,7 @@
 <template>
     <div @click="toggleCard">
     <transition name="flip">
-        <component  :is="cardSide" />
+        <component :frontText="wordData.algorithm.grade" :backText="wordData.translatedText" :is="cardSide" />
     </transition>
   </div>
 </template>
@@ -12,6 +12,9 @@ import CardBack from "./CardBack.vue";
 
 export default{
     name: "WordCard",
+    props:[
+      "wordData"
+    ],
     data(){
       return{
         flipped: false,

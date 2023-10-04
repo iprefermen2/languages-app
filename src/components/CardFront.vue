@@ -1,7 +1,7 @@
 <template>
     <div class="dude">
       <article>
-       <strong>front</strong>
+       <strong>{{frontText}}</strong>
        <span>Last exercised on: 25.9.2004<br>
               138 days before.</span>
       </article>
@@ -12,6 +12,7 @@
 <script lang="ts">
 export default{
     name: 'CardFront',
+    props:['frontText']
 
 }
 </script>

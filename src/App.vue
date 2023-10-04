@@ -1,6 +1,6 @@
 <template>
     <NavigationMenu></NavigationMenu>
-    <WordCard></WordCard>
+    <WordCard :wordData="sortedWords[0]"></WordCard>
     <RatingMenu></RatingMenu>
 </template>
 
@@ -22,9 +22,25 @@ export default{
   data() {
       return{
         words: wordsData,
+        sortedWords: [{}],
       }
   },
+  methods:{
+    getWords(){
+        this.sortedWords.shift();
+        this.words.filter(e => {
+        if(Math.ceil(Date.now()/86400000) >= Math.ceil(e.date/86400000)){
+          this.sortedWords.push(e);
+      }})    
+    }
+  },
+  beforeMount() {
+    this.getWords();
+    console.log(this.words);
+    console.log(this.sortedWords[0]);
+  },
 }
+
 </script>
 
 

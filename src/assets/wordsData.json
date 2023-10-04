@@ -2,68 +2,41 @@
     
         {
             "id":"0",
-            "original-text":"o",
+            "originalText":"o",
             "translatedText":"sobre",
-            "date":"12.9.2023",
-            "algorithm": [
+            "date":"1696419375294",
+            "algorithm": 
                 {
                     "grade": "0",
                     "recalls": "0",
                     "easiness-factor": "0"
                 }
-            ]
+            
         },
         {
             "id":"1",
-            "original-text":"jeden",
+            "originalText":"jeden",
             "translatedText":"uno",
-            "date":"12.9.2023",
-            "algorithm": [
+            "date":"1696332996485",
+            "algorithm": 
                 {
                     "grade": "0",
                     "recalls": "0",
                     "easiness-factor": "0"
                 }
-            ]
+            
         },
         {
             "id":"2",
-            "original-text":"rodina",
+            "originalText":"rodina",
             "translatedText":"la familia",
-            "date":"12.9.2023",
-            "algorithm": [
+            "date":"1696505807209",
+            "algorithm": 
                 {
                     "grade": "0",
                     "recalls": "0",
                     "easiness-factor": "0"
                 }
-            ]
-        },
-        {
-            "id":"3",
-            "original-text":"kostol",
-            "translatedText":"la iglesia",
-            "date":"12.9.2023",
-            "algorithm": [
-                {
-                    "grade": "0",
-                    "recalls": "0",
-                    "easiness-factor": "0"
-                }
-            ]
-        },
-        {
-            "id":"4",
-            "original-text":"rodina",
-            "translatedText":"parientes",
-            "date":"12.9.2023",
-            "algorithm": [
-                {
-                    "grade": "0",
-                    "recalls": "0",
-                    "easiness-factor": "0"
-                }
-            ]
-        }
-    
+            
+        }   
 ]
